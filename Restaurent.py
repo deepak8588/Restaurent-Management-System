@@ -16,23 +16,23 @@ window.title("Restaurent Management System")
 text_input=StringVar()
 operator=""
 
-Tops=Frame(window,width=1600,height=50,bg="powder blue",relief=SUNKEN)
+Tops=Frame(window,width=1600,height=50,bg="powder blue")
 Tops.pack(side=TOP)
 
 
-f1=Frame(window,width=800,height=700,relief=SUNKEN)
+f1=Frame(window,width=800,height=700)
 f1.pack(side=LEFT)
 
 
-f2=Frame(window,width=300,height=700,relief=SUNKEN)
+f2=Frame(window,width=300,height=700)
 f2.pack(side=RIGHT)
 '''==============================================Time============================================================'''
 localtime=time.asctime(time.localtime(time.time()))
 '''=============================================Time Info======================================================='''
-lblInfo=Label(Tops,font=("arial",50,"bold"),text="Restaurent Management System",fg="red",bd=10,anchor='w')
+lblInfo=Label(Tops,font=("arial",50,"bold"),text="Restaurent Management System",fg="red",bd=10)
 lblInfo.grid(row=0,column=0)
 
-lblInfo=Label(Tops,font=("arial",20,"bold"),text=localtime,fg="red",bd=10,anchor='w')
+lblInfo=Label(Tops,font=("arial",20,"bold"),text=localtime,fg="red",bd=10)
 lblInfo.grid(row=1,column=0)
 '''============================================Calculator======================================================='''
 def btnclick(numbers):
@@ -138,10 +138,10 @@ Multiply.grid(row=4,column=3)
 btn0=Button(f2,text=0,padx=14,pady=14,bd=8,fg="black",font=('arial',20,"bold"),command=lambda: btnclick(0))
 btn0.grid(row=5,column=0)
 
-btnc=Button(f2,text="C",padx=14,pady=14,bd=8,fg="black",font=('arial',20,"bold"),command=btnclear)
+btnc=Button(f2,text="C",padx=14,pady=14,bd=8,fg="red2",font=('arial',20,"bold"),command=btnclear)
 btnc.grid(row=5,column=1)
 
-btn=Button(f2,text="=",padx=14,pady=14,bd=8,fg="black",font=('arial',20,"bold"),command=btnequal)
+btn=Button(f2,text="=",padx=14,pady=14,bd=8,fg="red2",font=('arial',20,"bold"),command=btnequal)
 btn.grid(row=5,column=2)
 Divide=Button(f2,text='/',padx=14,pady=14,bd=8,fg="black",font=('arial',20,"bold"),command=lambda: btnclick("/"))
 Divide.grid(row=5,column=3)
@@ -230,12 +230,12 @@ lbltotal.grid(row=5,column=2)
 txttotal=Entry(f1,font=('arial',16,'bold'),textvariable=total,bd=10,bg="powder blue",justify="right",insertwidth=4)
 txttotal.grid(row=5,column=3)
 '''================================================Button=========================================='''
-btntotal=Button(f1,padx=16,pady=8,bd=16,fg="black",font=('arial',16,"bold"),width=10,text="Total",bg="powder blue",command=ref)
+btntotal=Button(f1,padx=16,pady=8,bd=16,fg="red2",font=('arial',16,"bold"),width=10,text="Total",bg="powder blue",command=ref)
 btntotal.grid(row=7,column=1)
 
-btnreset=Button(f1,padx=16,pady=8,bd=16,fg="black",font=('arial',16,"bold"),width=10,text="Reset",bg="powder blue",command=reset)
+btnreset=Button(f1,padx=16,pady=8,bd=16,fg="red2",font=('arial',16,"bold"),width=10,text="Reset",bg="powder blue",command=reset)
 btnreset.grid(row=7,column=2)
 
-btnexit=Button(f1,padx=16,pady=8,bd=16,fg="black",font=('arial',16,"bold"),width=10,text="Exit",bg="powder blue",command=qexit)
+btnexit=Button(f1,padx=16,pady=8,bd=16,fg="red2",font=('arial',16,"bold"),width=10,text="Exit",bg="powder blue",command=qexit)
 btnexit.grid(row=7,column=3)
 window.mainloop()
