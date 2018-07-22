@@ -108,7 +108,7 @@ btn8.grid(row=2,column=1)
 btn9=Button(f2,text=9,padx=14,pady=14,bd=8,fg="black",font=('arial',20,"bold"),command=lambda: btnclick(9))
 btn9.grid(row=2,column=2)
 
-Addition=Button(f2,text='+',padx=14,pady=14,bd=8,fg="black",font=('arial',20,"bold"),command=lambda: btnclick("+"))
+Addition=Button(f2,text='+',padx=14,pady=14,bd=8,fg="red2",font=('arial',20,"bold"),command=lambda: btnclick("+"))
 Addition.grid(row=2,column=3)
 '''========================================================================================='''
 btn4=Button(f2,text=4,padx=14,pady=14,bd=8,fg="black",font=('arial',20,"bold"),command=lambda: btnclick(4))
@@ -120,7 +120,7 @@ btn5.grid(row=3,column=1)
 btn6=Button(f2,text=6,padx=14,pady=14,bd=8,fg="black",font=('arial',20,"bold"),command=lambda: btnclick(6))
 btn6.grid(row=3,column=2)
 
-Subtract=Button(f2,text='-',padx=14,pady=14,bd=8,fg="black",font=('arial',20,"bold"),command=lambda: btnclick("-"))
+Subtract=Button(f2,text='-',padx=14,pady=14,bd=8,fg="red2",font=('arial',20,"bold"),command=lambda: btnclick("-"))
 Subtract.grid(row=3,column=3)
 '''==========================================================================================='''
 btn1=Button(f2,text=1,padx=14,pady=14,bd=8,fg="black",font=('arial',20,"bold"),command=lambda: btnclick(1))
@@ -132,7 +132,7 @@ btn2.grid(row=4,column=1)
 btn3=Button(f2,text=3,padx=14,pady=14,bd=8,fg="black",font=('arial',20,"bold"),command=lambda: btnclick(3))
 btn3.grid(row=4,column=2)
 
-Multiply=Button(f2,text='*',padx=14,pady=14,bd=8,fg="black",font=('arial',20,"bold"),command=lambda: btnclick("*"))
+Multiply=Button(f2,text='*',padx=14,pady=14,bd=8,fg="red2",font=('arial',20,"bold"),command=lambda: btnclick("*"))
 Multiply.grid(row=4,column=3)
 '''============================================================================================='''
 btn0=Button(f2,text=0,padx=14,pady=14,bd=8,fg="black",font=('arial',20,"bold"),command=lambda: btnclick(0))
@@ -143,7 +143,7 @@ btnc.grid(row=5,column=1)
 
 btn=Button(f2,text="=",padx=14,pady=14,bd=8,fg="red2",font=('arial',20,"bold"),command=btnequal)
 btn.grid(row=5,column=2)
-Divide=Button(f2,text='/',padx=14,pady=14,bd=8,fg="black",font=('arial',20,"bold"),command=lambda: btnclick("/"))
+Divide=Button(f2,text='/',padx=14,pady=14,bd=8,fg="red2",font=('arial',20,"bold"),command=lambda: btnclick("/"))
 Divide.grid(row=5,column=3)
 '''=============================================Restaurent info 1============================================'''
 rand=StringVar()
