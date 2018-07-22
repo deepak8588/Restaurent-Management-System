@@ -29,10 +29,10 @@ f2.pack(side=RIGHT)
 '''==============================================Time============================================================'''
 localtime=time.asctime(time.localtime(time.time()))
 '''=============================================Time Info======================================================='''
-lblInfo=Label(Tops,font=("arial",50,"bold"),text="Restaurent Management System",fg="steel blue",bd=10,anchor='w')
+lblInfo=Label(Tops,font=("arial",50,"bold"),text="Restaurent Management System",fg="red",bd=10,anchor='w')
 lblInfo.grid(row=0,column=0)
 
-lblInfo=Label(Tops,font=("arial",20,"bold"),text=localtime,fg="steel blue",bd=10,anchor='w')
+lblInfo=Label(Tops,font=("arial",20,"bold"),text=localtime,fg="red",bd=10,anchor='w')
 lblInfo.grid(row=1,column=0)
 '''============================================Calculator======================================================='''
 def btnclick(numbers):
